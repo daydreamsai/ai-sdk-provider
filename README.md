@@ -143,14 +143,7 @@ ROUTER_BASE_URL=https://api-beta.daydreams.systems
 
 ```ts
 type DreamsRouterPaymentConfig = {
-  network?:
-    | 'base'
-    | 'base-sepolia'
-    | 'avalanche'
-    | 'avalanche-fuji'
-    | 'iotex'
-    | 'solana'
-    | 'solana-devnet';
+  network?: 'base' | 'base-sepolia' | 'solana' | 'solana-devnet';
   validityDuration?: number; // default 600s
   mode?: 'lazy' | 'eager'; // default 'lazy'
   rpcUrl?: string; // Solana only
